@@ -10,7 +10,15 @@ general use outside of a testing context.
 Documentation
 -------------
 
-pydoc extras is your friend.
+pydoc extras is your friend. extras currently contains the following functions:
+
+* try_import
+
+* try_imports
+
+* safe_hasattr
+
+Which do what their name suggests.
 
 
 Licensing
