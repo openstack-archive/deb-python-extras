@@ -5,6 +5,7 @@ from distutils.core import setup
 import os.path
 
 import extras
+testtools = extras.try_import('testtools')
 
 
 def get_version():
@@ -17,7 +18,13 @@ def get_version():
 def get_long_description():
     readme_path = os.path.join(
         os.path.dirname(__file__), 'README.rst')
-    return open(manual_path).read()
+    return open(readme_path).read()
+
+
+cmdclass = {}
+
+if testtools is not None:
+    cmdclass['test'] = testtools.TestCommand
 
 
 setup(name='extras',
@@ -33,4 +40,4 @@ setup(name='extras',
         'extras',
         'extras.tests',
         ],
-      cmdclass={'test': testtools.TestCommand})
+      cmdclass=cmdclass)
