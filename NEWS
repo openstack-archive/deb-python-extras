@@ -1,0 +1,15 @@
+extras NEWS
++++++++++++
+
+Changes and improvements to extras_, grouped by release.
+
+NEXT
+~~~~
+
+0.0.1
+~~~~~
+
+Initial extraction from testtools.
+
+
+.. _extras: http://pypi.python.org/pypi/extras
