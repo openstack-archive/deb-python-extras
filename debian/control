@@ -13,6 +13,7 @@ Homepage: http://pypi.python.org/pypi/extras/0.0.1
 
 Package: python-extras
 Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${python:Depends}, ${misc:Depends}, python-testtools
 Description: extensions to the Python standard library
  Extras is a set of extensions to the Python standard library, originally
