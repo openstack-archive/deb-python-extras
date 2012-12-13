@@ -11,7 +11,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-extras.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-extras.git
 Homepage: http://pypi.python.org/pypi/extras/0.0.1
 
-Package: python-warlock
+Package: python-extras
 Architecture: all
 Depends: ${python:Depends}, ${misc:Depends}, python-testtools
 Description: extensions to the Python standard library
