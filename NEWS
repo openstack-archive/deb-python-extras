@@ -6,6 +6,11 @@ Changes and improvements to extras_, grouped by release.
 NEXT
 ~~~~
 
+0.0.2
+~~~~~
+
+Fix Makefile to not have cruft leftover from testtools.
+
 0.0.1
 ~~~~~
 
