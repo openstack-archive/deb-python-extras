@@ -6,9 +6,7 @@ Files: debian/*
 Copyright: (c) 2012, Thomas Goirand <zigo@debian.org>
 License: MIT
 
-Copyright: (c) 2010-2012, Jonathan Lange
-           (c) 2010-2012, Martin Pool
-           (c) 2010-2012, Robert Collins
+Copyright: (c) 2012, Robert Collins <robertc@robertcollins.net>
 License: MIT
 
 License: MIT
