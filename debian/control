@@ -5,6 +5,7 @@ Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Uploaders: Thomas Goirand <zigo@debian.org>
 Build-Depends: debhelper (>= 9), python-setuptools,  python-all (>= 2.6.6-3~),
  openstack-pkg-tools
+Build-Depends-Indep: python-testtools
 Standards-Version: 3.9.3
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-extras.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-extras.git
@@ -12,7 +13,7 @@ Homepage: http://pypi.python.org/pypi/extras/0.0.1
 
 Package: python-warlock
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}
+Depends: ${python:Depends}, ${misc:Depends}, python-testtools
 Description: extensions to the Python standard library
  Extras is a set of extensions to the Python standard library, originally
  written to make the code within testtools cleaner, but now split out for
