@@ -1,0 +1,41 @@
+commit 7d5ea56d1f22af33f6182e84b1f55ccc84fbb5cf
+Author: Robert Collins <robertc@robertcollins.net>
+Date:   Thu Dec 13 21:32:30 2012 +1300
+
+    Release 0.0.2, removing Makefile cruft.
+
+commit a21a427fc3629e4bcb208618b3de3772a6e67d41
+Author: Robert Collins <robertc@robertcollins.net>
+Date:   Sat Oct 27 22:43:39 2012 +1300
+
+    Open 0.0.2.
+
+commit 7705fda3e07b6c1500cfb3284b8f6896a2f3d6f4
+Author: Robert Collins <robertc@robertcollins.net>
+Date:   Sat Oct 27 22:41:36 2012 +1300
+
+    Release 0.0.1.
+
+commit 01f6a7eefb57684912575664f1f695cadb392dcb
+Author: Robert Collins <robertc@robertcollins.net>
+Date:   Sat Oct 27 22:32:34 2012 +1300
+
+    Note the functions in the README, for discoverability.
+
+commit 71ce70c32d950309031aa2e65e75b5efef73e57e
+Author: Robert Collins <robertc@robertcollins.net>
+Date:   Sat Oct 27 22:30:45 2012 +1300
+
+    Drop README.md.
+
+commit f8e93227207a1eddef02cb306651074172f64188
+Author: Robert Collins <robertc@robertcollins.net>
+Date:   Sat Oct 27 22:27:55 2012 +1300
+
+    Initial extraction of code from testtools.
+
+commit 87a05a447f982e4ddc954fb2c72fa59637c4bd58
+Author: rbtcollins <robertc@robertcollins.net>
+Date:   Sat Oct 27 01:24:34 2012 -0700
+
+    Initial commit
