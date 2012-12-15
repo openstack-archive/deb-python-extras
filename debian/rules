@@ -2,14 +2,9 @@
 
 #export DH_VERBOSE=1
 
+UPSTREAM_GIT = git://github.com/testing-cabal/extras.git
+
 include /usr/share/openstack-pkg-tools/pkgos.make
 
 %:
 	dh $@ --buildsystem=python_distutils --with python2
-
-#override_dh_auto_install:
-#	python setup.py install --root=debian/python-extra --install-layout=deb
-
-#override_dh_auto_clean:
-#	./setup.py clean
-#	find . -iname '*.pyc' -delete
