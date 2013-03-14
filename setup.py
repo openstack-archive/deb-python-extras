@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 """Distutils installer for extras."""
 
-from distutils.core import setup
+from setuptools import setup
 import os.path
 
 import extras
-testtools = extras.try_import('testtools')
+testtools_cmd = extras.try_import('testtools.TestCommand')
 
 
 def get_version():
@@ -23,8 +23,8 @@ def get_long_description():
 
 cmdclass = {}
 
-if testtools is not None:
-    cmdclass['test'] = testtools.TestCommand
+if testtools_cmd is not None:
+    cmdclass['test'] = testtools_cmd
 
 
 setup(name='extras',
