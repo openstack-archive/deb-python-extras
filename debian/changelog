@@ -1,5 +1,6 @@
-python-extras (0.0.2-2) UNRELEASED; urgency=low
+python-extras (0.0.3-1) experimental; urgency=low
 
+  * New upstream release.
   * Updated homepage: so it doesn't include the package version.
 
  -- Thomas Goirand <zigo@debian.org>  Thu, 14 Mar 2013 20:01:12 +0800
