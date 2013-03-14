@@ -3,8 +3,12 @@ Section: python
 Priority: optional
 Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Uploaders: Thomas Goirand <zigo@debian.org>
-Build-Depends: debhelper (>= 9), python-setuptools,  python-all (>= 2.6.6-3~),
- openstack-pkg-tools
+Build-Depends: debhelper (>= 9),
+ openstack-pkg-tools,
+ python3-all,
+ python3-setuptools,
+ python-all (>= 2.6.6-3~),
+ python-setuptools,
 Build-Depends-Indep: python-testtools
 Standards-Version: 3.9.3
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-extras.git
@@ -15,7 +19,21 @@ Package: python-extras
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${python:Depends}, ${misc:Depends}, python-testtools
-Description: extensions to the Python standard library
+Description: extensions to the Python standard library (Python 2.x)
  Extras is a set of extensions to the Python standard library, originally
  written to make the code within testtools cleaner, but now split out for
  general use outside of a testing context.
+ .
+ This package contains the libraries for Python 2.x.
+
+Package: python3-extras
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Provides: ${python:Provides}
+Depends: ${python3:Depends}, ${misc:Depends}, python-testtools
+Description: extensions to the Python standard library (Python 3.x)
+ Extras is a set of extensions to the Python standard library, originally
+ written to make the code within testtools cleaner, but now split out for
+ general use outside of a testing context.
+ .
+ This package contains the libraries for Python 3.x.
