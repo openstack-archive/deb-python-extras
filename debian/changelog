@@ -1,3 +1,9 @@
+python-extras (0.0.3-2) unstable; urgency=low
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 11 May 2013 04:49:39 +0000
+
 python-extras (0.0.3-1) experimental; urgency=low
 
   * New upstream release.
