@@ -1,6 +1,10 @@
 python-extras (0.0.3-3) UNRELEASED; urgency=low
 
+  [ Thomas Goirand ]
   * Ran wrap-and-sort.
+
+  [ Dimitri John Ledkov ]
+  * Use python3 dependencies in the python3 package.
 
  -- Thomas Goirand <zigo@debian.org>  Thu, 30 May 2013 13:53:58 +0800
 
