@@ -8,7 +8,7 @@ python-extras (0.0.3-3) unstable; urgency=medium
   [ Dimitri John Ledkov ]
   * Use python3 dependencies in the python3 package.
 
- -- Thomas Goirand <zigo@debian.org>  Thu, 30 May 2013 13:53:58 +0800
+ -- Thomas Goirand <zigo@debian.org>  Sat, 03 May 2014 02:10:05 +0000
 
 python-extras (0.0.3-2) unstable; urgency=low
 
