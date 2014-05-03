@@ -1,7 +1,8 @@
-python-extras (0.0.3-3) UNRELEASED; urgency=low
+python-extras (0.0.3-3) unstable; urgency=medium
 
   [ Thomas Goirand ]
   * Ran wrap-and-sort.
+  * Moves python{3,}-testtools as Recommends (Closes: #707814).
 
   [ Dimitri John Ledkov ]
   * Use python3 dependencies in the python3 package.

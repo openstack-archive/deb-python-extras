@@ -18,7 +18,8 @@ Homepage: http://pypi.python.org/pypi/extras
 Package: python-extras
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: python-testtools, ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${python:Depends}
+Recommends: python-testtools
 Description: extensions to the Python standard library (Python 2.x)
  Extras is a set of extensions to the Python standard library, originally
  written to make the code within testtools cleaner, but now split out for
@@ -30,7 +31,8 @@ Package: python3-extras
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Provides: ${python:Provides}
-Depends: python3-testtools, ${misc:Depends}, ${python3:Depends}
+Depends: ${misc:Depends}, ${python3:Depends}
+Recommends: python3-testtools
 Description: extensions to the Python standard library (Python 3.x)
  Extras is a set of extensions to the Python standard library, originally
  written to make the code within testtools cleaner, but now split out for
