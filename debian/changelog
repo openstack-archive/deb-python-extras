@@ -1,3 +1,9 @@
+python-extras (0.0.3-4) UNRELEASED; urgency=medium
+
+  * Drop deprecated python:Provides from python3 package.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 23 May 2014 20:32:10 +0100
+
 python-extras (0.0.3-3) unstable; urgency=medium
 
   [ Thomas Goirand ]
