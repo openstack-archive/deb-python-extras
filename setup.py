@@ -35,7 +35,12 @@ setup(name='extras',
         'in the standard library'),
       long_description=get_long_description(),
       version=get_version(),
-      classifiers=["License :: OSI Approved :: MIT License"],
+      classifiers=[
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        ],
       packages=[
         'extras',
         'extras.tests',
