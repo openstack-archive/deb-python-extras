@@ -13,7 +13,7 @@ Build-Depends-Indep: python-testtools
 Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-extras.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-extras.git
-Homepage: http://pypi.python.org/pypi/extras
+Homepage: https://pypi.python.org/pypi/extras
 
 Package: python-extras
 Architecture: all

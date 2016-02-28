@@ -1,6 +1,10 @@
 python-extras (0.0.3-4) UNRELEASED; urgency=medium
 
+  [ Dimitri John Ledkov ]
   * Drop deprecated python:Provides from python3 package.
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https).
 
  -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 23 May 2014 20:32:10 +0100
 
