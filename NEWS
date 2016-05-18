@@ -6,6 +6,9 @@ Changes and improvements to extras_, grouped by release.
 NEXT
 ~~~~
 
+* Imports in the middle of import cycles are now supported.
+  (Robert Collins)
+
 0.0.3
 ~~~~~
 

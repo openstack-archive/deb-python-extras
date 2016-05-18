@@ -1,5 +1,8 @@
 # Copyright (c) 2010-2012 extras developers. See LICENSE for details.
 
+import sys
+import types
+
 from testtools import TestCase
 from testtools.matchers import (
     Equals,
@@ -124,6 +127,22 @@ class TestTryImport(TestCase):
     def test_error_callback_not_on_success(self):
         # the error callback is not called on success.
         check_error_callback(self, try_import, 'os.path', 0, True)
+
+    def test_handle_partly_imported_name(self):
+        # try_import('thing.other') when thing.other is mid-import
+        # used to fail because thing.other is not assigned until thing.other
+        # finishes its import - but thing.other is accessible via sys.modules.
+        outer = types.ModuleType("extras.outer")
+        inner = types.ModuleType("extras.outer.inner")
+        inner.attribute = object()
+        self.addCleanup(sys.modules.pop, "extras.outer", None)
+        self.addCleanup(sys.modules.pop, "extras.outer.inner", None)
+        sys.modules["extras.outer"] = outer
+        sys.modules["extras.outer.inner"] = inner
+        result = try_import("extras.outer.inner.attribute")
+        self.expectThat(result, Is(inner.attribute))
+        result = try_import("extras.outer.inner")
+        self.expectThat(result, Is(inner))
 
 
 class TestTryImports(TestCase):

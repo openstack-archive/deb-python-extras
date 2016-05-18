@@ -40,13 +40,17 @@ def try_import(name, alternative=None, error_callback=None):
     """
     module_segments = name.split('.')
     last_error = None
+    remainder = []
+    # module_name will be what successfully imports. We cannot walk from the
+    # __import__ result because in import loops (A imports A.B, which imports
+    # C, which calls try_import("A.B")) A.B will not yet be set.
     while module_segments:
         module_name = '.'.join(module_segments)
         try:
-            module = __import__(module_name)
+            __import__(module_name)
         except ImportError:
             last_error = sys.exc_info()[1]
-            module_segments.pop()
+            remainder.append(module_segments.pop())
             continue
         else:
             break
@@ -54,8 +58,9 @@ def try_import(name, alternative=None, error_callback=None):
         if last_error is not None and error_callback is not None:
             error_callback(last_error)
         return alternative
+    module = sys.modules[module_name]
     nonexistent = object()
-    for segment in name.split('.')[1:]:
+    for segment in reversed(remainder):
         module = getattr(module, segment, nonexistent)
         if module is nonexistent:
             if last_error is not None and error_callback is not None:
