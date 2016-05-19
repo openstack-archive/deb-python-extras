@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: python-extras
-Source: http://pypi.python.org/pypi/extras
+Source: https://pypi.python.org/pypi/extras
 
 Files: debian/*
 Copyright: (c) 2012, Thomas Goirand <zigo@debian.org>
