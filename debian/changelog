@@ -10,6 +10,7 @@ python-extras (0.0.3-4) UNRELEASED; urgency=medium
   * d/copyright: Changed source URL to https protocol
   * d/s/options: extend-diff-ignore of .gitreview
   * d/control: Using OpenStack's Gerrit as VCS URLs.
+  * Bumped debhelper compat version to 10
 
  -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 23 May 2014 20:32:10 +0100
 
